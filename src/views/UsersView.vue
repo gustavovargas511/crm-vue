@@ -36,6 +36,15 @@ const updActive = ({ id, active }) => {
     })
     .catch((err) => console.log(err));
 };
+
+const delActive = (id) => {
+  // console.log("deleting...", id);
+  UserService.delUser(id)
+    .then(() => {
+      users.value = users.value.filter((user) => user.id !== id);
+    })
+    .catch((err) => console.log(err));
+};
 </script>
 
 <template>
@@ -83,6 +92,7 @@ const updActive = ({ id, active }) => {
                 :key="user.id"
                 :user="user"
                 @c-update-active="updActive"
+                @c-delete-user="delActive"
               />
             </tbody>
           </table>

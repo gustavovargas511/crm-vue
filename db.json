@@ -1,36 +1,6 @@
 {
   "users": [
     {
-      "userName": "Gustrago",
-      "lastName": "Vargas",
-      "email": "gustavov@1984development.com",
-      "phoneNumber": "999-888-7896",
-      "company": "SevenElevenCoffee",
-      "jobTitle": "prof",
-      "id": "a842",
-      "active": false
-    },
-    {
-      "userName": "Poyo",
-      "lastName": "Vargas",
-      "email": "poyo@gmail.com",
-      "phoneNumber": "888-888-7744",
-      "company": "Cats Inc",
-      "jobTitle": "F. Poyo",
-      "id": "0ced",
-      "active": false
-    },
-    {
-      "userName": "Anna B",
-      "lastName": "Vargas",
-      "email": "isthis@ondb.com",
-      "phoneNumber": "999-888-7896",
-      "company": "1984Development",
-      "jobTitle": "BB",
-      "id": "dda0",
-      "active": false
-    },
-    {
       "id": "77ad",
       "userName": "Poyo",
       "lastName": "Banana",
@@ -38,6 +8,16 @@
       "phoneNumber": "999-888-7896",
       "company": "Cats Inc",
       "jobTitle": "F. Poyo",
+      "active": true
+    },
+    {
+      "id": "f822",
+      "userName": "Gustavo J.",
+      "lastName": "Vargas N.",
+      "email": "gj@mail.com",
+      "phoneNumber": "888-888-7894",
+      "company": "1984Development",
+      "jobTitle": "Ing",
       "active": false
     }
   ]

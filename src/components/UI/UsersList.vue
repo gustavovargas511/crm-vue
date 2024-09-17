@@ -8,7 +8,7 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["c-update-active"]);
+const emits = defineEmits(["c-update-active", "c-delete-user"]);
 
 const userName = computed(() => {
   return `${props.user.lastName}, ${props.user.userName}`;
@@ -59,7 +59,12 @@ const statusText = computed(() => {
         class="text-blue-400 hover:text-blue-500 mr-5"
         >Modify
       </RouterLink>
-      <button class="text-red-500 hover:text-red-600">Delete</button>
+      <button
+        class="text-red-500 hover:text-red-600"
+        @click="emits('c-delete-user', props.user.id)"
+      >
+        Delete
+      </button>
     </td>
   </tr>
 </template>

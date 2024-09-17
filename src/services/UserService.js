@@ -18,4 +18,7 @@ export default {
     return usersAPI.patch("/users/" + id, data);
     // console.log(id);
   },
+  delUser(id) {
+    return usersAPI.delete("/users/" + id);
+  },
 };
