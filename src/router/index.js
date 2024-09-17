@@ -6,7 +6,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "users-list",
       component: UsersView,
       props: { title: "Users List" },
     },
@@ -15,6 +15,12 @@ const router = createRouter({
       name: "new-user",
       component: () => import("../views/NewUserView.vue"),
       props: { title: "Add New User" },
+    },
+    {
+      path: "/edit-user/:id",
+      name: "edit-user",
+      component: () => import("../views/EditUserView.vue"),
+      props: { title: "Edit User" },
     },
   ],
 });
